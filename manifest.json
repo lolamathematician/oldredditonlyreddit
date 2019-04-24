@@ -1,0 +1,22 @@
+{
+	"applications": {
+		"gecko": {
+			"id": "oldredditonlyreddit@hotmail.com"
+		}
+	}
+	"manifest_version": 2,
+	"name": "OldRedditOnlyReddit",
+	"version": "1.0",
+
+	"description": "Redirects all reddit links to the old. reddit site",
+	"icons": {
+		"48": "icons/old_reddit_only_reddit.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://www.reddit.com/*"],
+			"js": ["old_reddit_redirect.js"]
+		}
+	]
+}
